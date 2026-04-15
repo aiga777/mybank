@@ -2,48 +2,33 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>MyBank | Личная безопасность клиента</title>
+    <title>MyBank Online — Вход в личный кабинет</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; }
-        .nav { background: #003366; color: white; padding: 15px 10%; display: flex; justify-content: space-between; align-items: center; }
-        .hero { background: white; padding: 60px 10%; text-align: center; }
-        .hero h1 { color: #003366; font-size: 36px; }
-        .card { background: white; border-radius: 10px; padding: 30px; max-width: 800px; margin: -50px auto 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .btn { background: #e74c3c; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
-        .features { display: flex; justify-content: space-around; margin-top: 40px; }
-        .feature-item { text-align: center; flex: 1; padding: 10px; }
-        .feature-title { font-weight: bold; color: #003366; display: block; margin-bottom: 5px; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; flex-direction: column; height: 100vh; }
+        .header { background: #003366; color: white; padding: 15px 10%; display: flex; justify-content: space-between; align-items: center; }
+        .login-container { flex: 1; display: flex; justify-content: center; align-items: center; }
+        .login-card { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 350px; }
+        h2 { color: #333; text-align: center; margin-bottom: 30px; }
+        input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .btn { width: 100%; padding: 12px; background: #003366; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; }
+        .footer { text-align: center; padding: 20px; color: #65676b; font-size: 12px; }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <div style="font-size: 24px; font-weight: bold;">MyBank</div>
-        <div>Частным клиентам | Бизнесу | <b>Безопасность</b></div>
+    <div class="header">
+        <div style="font-size: 24px;">MyBank</div>
+        <div style="font-size: 14px;">8 800 555-35-35</div>
     </div>
-    <div class="hero">
-        <h1>Ваша безопасность — наш приоритет</h1>
-        <p>В связи с обновлением протоколов безопасности в 2026 году, всем пользователям необходимо пройти верификацию системы.</p>
-    </div>
-    <div class="card">
-        <h2>Модуль защиты «MyBank Shield»</h2>
-        <p>Мы разработали специальное приложение для защиты ваших транзакций. Модуль проверяет чистоту DNS-адресов и предотвращает подмену сайтов.</p>
-        <div class="features">
-            <div class="feature-item">
-                <span class="feature-title">АНТИФИШИНГ</span>
-                Комплексная проверка ссылок
-            </div>
-            <div class="feature-item">
-                <span class="feature-title">ШИФРОВАНИЕ</span>
-                Защита сессионных данных
-            </div>
-            <div class="feature-item">
-                <span class="feature-title">DNS-КОНТРОЛЬ</span>
-                Мониторинг сетевых узлов
-            </div>
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Вход в банк</h2>
+            <form>
+                <input type="text" placeholder="Логин или номер карты">
+                <input type="password" placeholder="Пароль">
+                <button type="button" class="btn">ВОЙТИ</button>
+            </form>
         </div>
-        <center>
-            <a href="setup.exe" class="btn">Скачать модуль защиты (v.2.4.1)</a>
-        </center>
     </div>
+    <div class="footer">© 2026 АО «MyBank». Лицензия №1337.</div>
 </body>
 </html>
